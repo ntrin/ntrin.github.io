@@ -322,21 +322,20 @@ body {
   box-shadow: 0px 15px 35px rgb(0, 0, 0, 0.06);
   transform: scale(1.03);
 }
-
-.exp {
-  margin-left: 15px;
+.work {
+  margin-left: -550px;
   /* align section w/ heading above */
 }
 
-.exp a {
+.work a {
   /* 30px is the gutter size in magic grid */
-  width: calc(49% - 30px);
+  width: calc(49% - 15px);
   /* 49% avoids a weird single column on some wide screens */
   display: flex;
   text-decoration: none;
 }
 
-.exp section {
+.work section {
   width: 100%;
   padding: 2.5vh 5%;
   margin: 1vh 0px;
@@ -349,7 +348,39 @@ body {
   transform: scale(1);
 }
 
-.exp section:hover {
+.work section:hover {
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0, 0);
+  box-shadow: 0px 15px 35px rgb(0, 0, 0, 0.06);
+  transform: scale(1.03);
+}
+.education {
+  margin-left: -550px;
+  /* align section w/ heading above */
+}
+
+.education a {
+  /* 30px is the gutter size in magic grid */
+  width: calc(49% - 15px);
+  /* 49% avoids a weird single column on some wide screens */
+  display: flex;
+  text-decoration: none;
+}
+
+.education section {
+  width: 100%;
+  padding: 2.5vh 5%;
+  margin: 1vh 0px;
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--text-color);
+  border: 1px solid rgb(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
+  transition: 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+.education section:hover {
   cursor: pointer;
   border: 1px solid rgb(0, 0, 0, 0);
   box-shadow: 0px 15px 35px rgb(0, 0, 0, 0.06);
@@ -510,16 +541,29 @@ body {
     width: 88%;
   }
 
-  .exp {
+  .work {
     margin-left: 0;
     /* remove neg margin to align w/ header */
   }
 
-  .exp a {
+  .work a {
     width: 100%;
   }
 
-  .exp section {
+  .work section {
+    width: 88%;
+  }
+
+  .education {
+    margin-left: 0;
+    /* remove neg margin to align w/ header */
+  }
+
+  .education a {
+    width: 100%;
+  }
+
+  .education section {
     width: 88%;
   }
 
@@ -629,11 +673,20 @@ body {
   background: rgb(20, 20, 20);
 }
 
-.exp section {
+.education section {
   background: rgb(20, 20, 20);
 }
+
+.work section {
+  background: rgb(20, 20, 20);
+}
+
 #blog_section section {
   background: rgb(20, 20, 20);
+}
+
+p.date {
+  text-align: right;
 }
 
 @media (max-width: 800px) {
