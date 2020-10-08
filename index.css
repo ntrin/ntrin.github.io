@@ -353,7 +353,9 @@ body {
 .bottom_section span i {
   font-size: 15px;
 }
-
+.username {
+  font-size: 35px; text-decoration: none;
+}
 .socials {
   color: #fff0;
   text-decoration: none;
