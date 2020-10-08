@@ -323,6 +323,38 @@ body {
   transform: scale(1.03);
 }
 
+.exp {
+  margin-left: 15px;
+  /* align section w/ heading above */
+}
+
+.exp a {
+  /* 30px is the gutter size in magic grid */
+  width: calc(49% - 30px);
+  /* 49% avoids a weird single column on some wide screens */
+  display: flex;
+  text-decoration: none;
+}
+
+.exp section {
+  width: 100%;
+  padding: 2.5vh 5%;
+  margin: 1vh 0px;
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--text-color);
+  border: 1px solid rgb(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
+  transition: 0.4s ease-in-out;
+  transform: scale(1);
+}
+
+.exp section:hover {
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0, 0);
+  box-shadow: 0px 15px 35px rgb(0, 0, 0, 0.06);
+  transform: scale(1.03);
+}
 .section_title {
   font-size: 24px;
   font-weight: bold;
@@ -478,6 +510,19 @@ body {
     width: 88%;
   }
 
+  .exp {
+    margin-left: 0;
+    /* remove neg margin to align w/ header */
+  }
+
+  .exp a {
+    width: 100%;
+  }
+
+  .exp section {
+    width: 88%;
+  }
+
   #blogs {
     columns: 1;
   }
@@ -584,6 +629,9 @@ body {
   background: rgb(20, 20, 20);
 }
 
+.exp section {
+  background: rgb(20, 20, 20);
+}
 #blog_section section {
   background: rgb(20, 20, 20);
 }
