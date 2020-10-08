@@ -355,15 +355,17 @@ body {
 }
 
 .socials {
-  color: #fff;
+  color: #fff0;
   text-decoration: none;
-  margin: 3vh 0px !important;
+  margin: 3vh 2px !important;
 }
 
 .socials span {
   display: inline-block !important;
   margin-right: 2vw !important;
   font-weight: normal !important;
+  /*outline: 1px solid #fff;*/
+  box-shadow: 0 0 6pt 2pt red
 }
 
 .socials span a {
