@@ -51,11 +51,11 @@ body {
 
 #profile {
   width: 24vw;
-  padding: 4vh 3vw;
+  padding: 6vh 4vw;
   height: 92vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   text-align: left;
   background: var(--background-image) center center;
   background-size: cover !important;
@@ -395,9 +395,17 @@ body {
 }
 
 .about_section {
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Questrial", sans-serif;
-  margin: 2vh 0px;
+  margin: 1.5vh 0px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.about_section_space {
+  font-size: 15px;
+  font-family: "Questrial", sans-serif;
+  margin: 8vh 0px;
   font-weight: bold;
   word-wrap: break-word;
 }
