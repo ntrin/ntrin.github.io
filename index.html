@@ -16,6 +16,7 @@
     <div id="profile">
       <div id="profile_img" style="background: url(https://avatars0.githubusercontent.com/u/55123440?v=4) center;"></div>
       <div id="username"><span style="display:none;">null</span><a href="https://github.com/ntrin" class="username">Nicolas Trinephi</a></div>
+      Brief Description of myself
       <div id="userbio" style="display: none;">undefined</div>
       <div id="about">
                 <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
@@ -125,12 +126,17 @@
                     <a href="https://wintershalldea.com/en" target="_blank">
                         <section>
                             <p><span style="float:left;font-size: 20pt">Data Science Internship</span>
-                            <span style="float:right;font-size: 10pt">Sep. 2019 - Sep. 2020</span></p><br>
+                            <span style="float:right;font-size: 15pt">June. 2020 - Sep. 2020</span></p><br>
                             <div class="about_section">
-                            <span style="display:block;"><i>Wintershall DEA</i><br></span>
+                            <span style="display:block;font-size: 15pt"><i>Wintershall DEA</i><br></span>
                             </div>
                             <div class="bottom_section">
-                                <span style="display:inline-block;">Write description
+                                <span style="display:inline-block;">
+                                    • Developed sustainable object oriented Python code for virtual flow metering from the ground up.<br>
+                                    • Performed statistical analysis, bi-variate analysis and designed interactive visualization of 13 years of
+raw industrial oil data.<br>
+                                    • Structured predictive analysis algorithms to forecast production rates with 99% accuracy in virtual flow
+metering using Keras and Databricks.
 
                                 Machine Learning, Keras, Databricks
                                 PySpark</span>
@@ -146,25 +152,31 @@
         <div class="education" id="education_section">
                     <a href="https://www.imperial.ac.uk/study/pg/earth-science/computational-science/" target="_blank">
                         <section>
-                            <div class="section_title">Master's of Science: Computational Science</div>
-                            <div class="about_section">
-                            <span style="display:block;"><i>Imperial College London</i><br></span>
+                            <!-- <div class="section_title">Master's of Science<br> Computational Science</div>-->
+                            <p><span style="float:left;font-size: 20pt">Master's of Science<br>
+                            Computational Science<br></span>
+                            <span style="float:right;font-size: 15pt">Sep. 2019 - Sep. 2020</span></p>
+                            <div class="about_section_space">
+                            <span style="float:left;font-size: 15pt"><i>Imperial College London</i></span>
                             </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;">Sep. 2019 - Sep. 2020</span>
-                            </div>
+                            <!--  <div class="bottom_section">
+                               <span style="display:inline-block;">Sep. 2019 - Sep. 2020</span> 
+                            </div>-->
                         </section>
                     </a>
 
                     <a href="https://mecheng.ucl.ac.uk/study/undergraduate/programme/engineering-mechanical-with-business-finance-beng-2019/" target="_blank">
                         <section>
-                            <div class="section_title">Bachelor's of Science: Mechanical Engineering w/ Business Finance</div>
-                            <div class="about_section">
-                            <span style="display:block;"><i>University College London</i><br></span>
+                            <!--<div class="section_title">Bachelor's of Science<br> Mechanical Engineering w/ Business Finance</div> -->
+                            <p><span style="float:left;font-size: 20pt">Bachelor's of Science<br>
+                            Mechanical Engineering w/ Business Finance</span>
+                            <span style="float:right;font-size: 15pt">Sep. 2016 - Jun. 2019</span></p>
+                            <div class="about_section_space">
+                            <span style="float:left;font-size: 15pt"><i>University College London</i></span>
                             </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;">Sep. 2016 - Jun. 2019</span>
-                            </div>
+                            <!--<div class="bottom_section">
+                                <span style="display:inline-block;">Sep. 2016 - Jun. 2019</span> 
+                            </div>-->
                         </section>
                     </a>
         </div>
@@ -225,17 +237,17 @@
     <script>
       const magicProjectsGrid = new MagicGrid({
         container: "#project_section",
-        animate: true,
+        animate: false,
         gutter: 30, // default gutter size
         static: true,
-        useMin: false,
+        useMin: true,
         maxColumns: 2,
         useTransform: true
       });
 
       const magicWorkGrid = new MagicGrid({
         container: "#work_section",
-        animate: true,
+        animate: false,
         gutter: 30, // default gutter size
         static: true,
         useMin: false,
@@ -245,7 +257,7 @@
 
       const magicEduGrid = new MagicGrid({
         container: "#education_section",
-        animate: true,
+        animate: false,
         gutter: 30, // default gutter size
         static: true,
         useMin: false,
