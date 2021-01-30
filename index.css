@@ -252,11 +252,13 @@ body {
   font-size: 26px;
   font-family: "Questrial", sans-serif;
   width: 100%;
+  font-weight: normal;
 }
 
 #about {
   font-size: 18px;
   font-family: "Questrial", sans-serif;
+  font-weight: normal;
 }
 
 #about a,
@@ -278,6 +280,8 @@ body {
 
 #about span i {
   font-size: 16px;
+  /*font-weight: normal;*/
+
 }
 
 #work {
